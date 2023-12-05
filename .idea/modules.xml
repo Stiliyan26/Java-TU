@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaTU.iml" filepath="$PROJECT_DIR$/.idea/JavaTU.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminarno/Lambda/Lambda.iml" filepath="$PROJECT_DIR$/seminarno/Lambda/Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SAA/SAA.iml" filepath="$PROJECT_DIR$/SAA/SAA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hash_table/hash_table.iml" filepath="$PROJECT_DIR$/hash_table/hash_table.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab/lab.iml" filepath="$PROJECT_DIR$/lab/lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SAA/saa_upr/saa_upr.iml" filepath="$PROJECT_DIR$/SAA/saa_upr/saa_upr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminarno/seminarno.iml" filepath="$PROJECT_DIR$/seminarno/seminarno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/seminarno/upr2/upr2.iml" filepath="$PROJECT_DIR$/seminarno/upr2/upr2.iml" />
+    </modules>
+  </component>
+</project>

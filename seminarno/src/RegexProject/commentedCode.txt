@@ -1,0 +1,47 @@
+//        Regex regex1 = new Regex("^[A-Za-z]+$", "Selects only upper and lower case letters.");
+//        Regex regex2 = new Regex("^[A-Za-z]+$", "Selects only upper and lower case letters.");
+//        Regex regex3 = new Regex("^[A-Za-z0-9]+$", "Selects only upper and lower case letters and numbers.");
+//        Regex regex4 = new Regex("^[0-9]+$", "Selects only numbers.");
+//        Regex regex4 = new Regex("^[a-z]+$", "Selects only lower case letters.");
+5//
+//        List<Regex> regexList = new ArrayList<>();
+//        regexList.add(regex1);
+//        regexList.add(regex2);
+//        regexList.add(regex3);
+//        regexList.add(regex4);
+//
+//        RegexServer regexServer = new RegexServer();
+//
+//        regexServer.writeRegexListToFile(regexList, filePath);
+//        List<Regex> fileRegexList = regexServer.readRegexListFromFile(filePath);
+//
+//        fileRegexList.forEach(System.out::println);
+
+    //Testing patterns
+//        List<Boolean> results = RegexTester.test(regexList.get(0), new String[]{"Kiro", "Mitko", "123"});
+//        System.out.println(results);
+
+
+
+//  public static boolean isRegexPatternInTxtFile(String pattern) {
+//    try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
+//      String textLine;
+//
+//      while ((textLine = bufferedReader.readLine()) != null) {
+//        String[] regexInfo = textLine.split(separator);
+//
+//        if (regexInfo.length > 2) {
+//          String currentPattern = regexInfo[1];
+//
+//          if (currentPattern.equals(pattern)) {
+//            System.out.println(pattern + "is already in the file!");
+//            return true;
+//          }
+//        }
+//      }
+//    } catch (IOException e) {
+//      e.printStackTrace();
+//    }
+//
+//    return false;
+//  }
