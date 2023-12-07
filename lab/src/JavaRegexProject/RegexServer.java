@@ -19,7 +19,7 @@ public class RegexServer {
     return String.valueOf(value);
   }
 
-  public void saveRegexList(List<Regex> listOfRegex) throws IOException {
+  public void saveRegexList(List<Regex> listOfRegex) {
     synchronized (mutex) {
       try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
         for (Regex regex : listOfRegex) {
@@ -37,7 +37,6 @@ public class RegexServer {
         }
       } catch (IOException e) {
         e.printStackTrace();
-        throw new IOException();
       }
     }
   }
@@ -119,7 +118,8 @@ public class RegexServer {
   }
   public List<Regex> filterRegexByKeyword(String keyword) throws RuntimeException, IOException {
     return loadRegexList().stream()
-      .filter(r -> r.getDescription().contains(keyword.trim()))
+      .filter(r -> r.getDescription().toLowerCase()
+        .contains(keyword.trim().toLowerCase()))
       .sorted(Comparator.comparingInt(Regex::getRating).reversed())
       .collect(Collectors.toList());
   }

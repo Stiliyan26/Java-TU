@@ -38,12 +38,6 @@ public class Regex {
     this.rating += rating;
   }
 
-  public static int setNextId(int nextId) {
-    Regex.nextId = nextId;
-
-    return Regex.nextId;
-  }
-
   @Override
   public String toString() {
     return "id = " + id + " pattern = " + pattern + " description = " + description + " rating = " + rating;

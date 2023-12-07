@@ -26,7 +26,7 @@ public class Client {
       userMenu(console, in, out);
     }
     catch (IOException e) {
-      throw new RuntimeException(e);
+      e.printStackTrace();
     }
     finally {
       if (server != null) {

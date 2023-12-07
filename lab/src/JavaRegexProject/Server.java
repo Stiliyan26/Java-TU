@@ -38,6 +38,7 @@ public class Server {
            PrintStream out = new PrintStream(client.getOutputStream());
       ) {
         userMenu(in, out);
+        client.close();
       } catch (IOException e) {
         e.printStackTrace();
       }
@@ -111,8 +112,10 @@ public class Server {
       List<Regex> regexList = regexServer.loadRegexList();
 
       if (!regexList.isEmpty()) {
-        int newId = Regex.setNextId(regexList.get(regexList.size() - 1).getId() + 1);
+        int newId = regexList.get(regexList.size() - 1).getId() + 1;
         newRegex.setId(newId);
+      } else {
+        newRegex.setId(0);
       }
 
       regexList.add(newRegex);
